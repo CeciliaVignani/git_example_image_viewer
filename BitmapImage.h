@@ -13,7 +13,9 @@ public:
 
 private:
     int width, height;
-    char *buffer;
+    char channels;          //per i colori
+    char depth;             //per la profondità dei colori, per rappresentare una gamma molto più vasta di colori
+    int *buffer;            //da char diventa int
     std::string name;
 };
 
